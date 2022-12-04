@@ -16,7 +16,7 @@ def calculate_overlap(r1, r2):
     
     return a/b
 
-def calculate_segmentation_covering(segmentation1, id):
+def calculate_SC(segmentation1, id):
     if len(segmentation1.shape) > 2:
         segmentation1 = image_to_int_array(segmentation1)
 
