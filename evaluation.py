@@ -70,7 +70,7 @@ def calculate_VI(input_array, id):
     for gt_image in gt_images:
         VI = skimage.metrics.variation_of_information(input_array, gt_image)
         VIs.append(VI)
-    return (np.mean(VIs), np.max(VIs))
+    return (np.mean(VIs), np.min(VIs))
 
 def calculate_PRI(input_array, id):
     if len(input_array.shape) > 2:
